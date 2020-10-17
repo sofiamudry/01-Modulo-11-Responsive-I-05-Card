@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    height: 100vh;
+    font-family: 'open sans', sans-serif;
+}
+
+.container {
+    height: 1000px;
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px #333;
+    color: #fff;
+    overflow: hidden;
+}
+
+.logo {
+    height: 35%;
+    background-color: #CB2140;
+    padding: 70px;
+}
+
+.logo figure img {
+    height: 200px;
+}
+
+.content {
+    background-color: #0B1F2C;
+    height: 70%;
+}
+
+.title {
+    font-size: 25px;
+    margin: 0px 60px;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.options span {
+    font-size: 10px;
+    border: 1px solid #CB2140;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+.description, .price {
+    margin: 60px 40px;
+    font-size: 13px;
+}
+
+.description-text {
+    margin: 20px 0px;
+    font-size: 17px;
+}
+
+.price-text {
+    font-size: 35px;
+    margin: 30px;
+}
+
+button {
+    background-color: #CB2140;
+    padding: 20px 70px;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+}
+
+@media (min-width:1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        display: flex;
+        width: 1000px;
+        height: 600px;
+        margin: auto;
+        text-align: left;
+    }
+    .logo {
+        height: 100%;
+        width: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo figure img {
+        height: 350px;
+    }
+    .content {
+        height: 100%;
+        width: 58%;
+        padding: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .title {
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        font-weight: 1000;
+    }
+    .options {
+        margin: 0;
+    }
+    .description, .price {
+        margin: 0;
+    }
+    .price-text {
+        margin: 20px 0px;
+    }
+}
